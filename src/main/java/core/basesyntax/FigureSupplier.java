@@ -4,10 +4,10 @@ import java.util.Random;
 
 public class FigureSupplier {
 
-    private final ColorSupplier colorSupplier;
-    private final Random random;
     private static final int FIGURE_COUNT = 5;
     private static final int RANDOM_MAX = 100;
+    private final ColorSupplier colorSupplier;
+    private final Random random;
 
     public FigureSupplier() {
         this.random = new Random();
