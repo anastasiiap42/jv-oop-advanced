@@ -1,5 +1,4 @@
 package core.basesyntax;
-
 public class RightTriangle extends Figure {
 
     private int rightLeg;
@@ -11,19 +10,19 @@ public class RightTriangle extends Figure {
         this.leftLeg = leftLeg;
     }
 
-    public void setRightTriangle(int rightLeg) {
+    public void setRightLeg(int rightLeg) {
         this.rightLeg = rightLeg;
     }
 
-    public int getRightTriangle() {
+    public int getRightLeg() {
         return this.rightLeg;
     }
 
-    public void setLeftTriangle(int leftLeg) {
+    public void setLeftLeg(int leftLeg) {
         this.leftLeg = leftLeg;
     }
 
-    public int getLeftTriangle() {
+    public int getLeftLeg() {
         return this.leftLeg;
     }
 
