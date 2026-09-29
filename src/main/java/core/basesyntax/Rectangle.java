@@ -28,13 +28,13 @@ public class Rectangle extends Figure {
     }
 
     @Override
-    public double obtainArea() {
+    public double getArea() {
         return this.base * this.height;
     }
 
     @Override
     public void draw() {
-        System.out.println("rectangle, area: " + this.obtainArea() + " sq. units, base: "
+        System.out.println("rectangle, area: " + this.getArea() + " sq. units, base: "
                 + this.base + ", height: " + this.height + " , color: " + this.getColor());
     }
 }

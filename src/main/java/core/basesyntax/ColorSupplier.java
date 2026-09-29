@@ -13,7 +13,6 @@ public class ColorSupplier {
     }
 
     public String getRandomColor() {
-        int index = new Random().nextInt(colors.length);
-        return colors[index];
+        return colors[random.nextInt(colors.length)];
     }
 }

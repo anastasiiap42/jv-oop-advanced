@@ -8,26 +8,25 @@ public class FigureSupplier {
     private Figure[] figures;
     private final Random random;
     private static final int RANDOM_MAX = 100;
+    private static final int FIGURE_COUNT = 5;
 
     public FigureSupplier() {
         this.random = new Random();
-        colorSupplier = new ColorSupplier(random);
+        this.colorSupplier = new ColorSupplier(random);
     }
 
     public Figure getRandomFigure() {
-        int figureType = random.nextInt(5);
+        int figureType = random.nextInt(FIGURE_COUNT);
         String color = colorSupplier.getRandomColor();
+        int input = random.nextInt(RANDOM_MAX) + 1;
 
         return switch (figureType) {
-            case 0 -> new Circle(color, random.nextInt(RANDOM_MAX) + 1);
-            case 1 -> new IsoscelesTrapezoid(color, random.nextInt(RANDOM_MAX) + 1,
-                    random.nextInt(RANDOM_MAX) + 1, random.nextInt(RANDOM_MAX) + 1);
-            case 2 -> new RightTriangle(color, random.nextInt(RANDOM_MAX) + 1,
-                    random.nextInt(RANDOM_MAX) + 1);
-            case 3 -> new Rectangle(color, random.nextInt(RANDOM_MAX) + 1,
-                    random.nextInt(RANDOM_MAX) + 1);
-            case 4 -> new Square(color, random.nextInt(RANDOM_MAX) + 1);
-            default -> null;
+            case 0 -> new Circle(color, input);
+            case 1 -> new IsoscelesTrapezoid(color, input, input, input);
+            case 2 -> new RightTriangle(color, input, input);
+            case 3 -> new Rectangle(color, input, input);
+            case 4 -> new Square(color, input);
+            default -> new Circle("white", 10);
         };
     }
 

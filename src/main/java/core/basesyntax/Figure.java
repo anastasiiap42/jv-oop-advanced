@@ -15,7 +15,7 @@ abstract class Figure {
         return this.color;
     }
 
-    abstract double obtainArea();
+    abstract double getArea();
 
     abstract void draw();
 
