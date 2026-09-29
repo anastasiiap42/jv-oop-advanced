@@ -6,8 +6,8 @@ public class FigureSupplier {
 
     private final ColorSupplier colorSupplier;
     private final Random random;
-    private static final int RANDOM_MAX = 100;
     private static final int FIGURE_COUNT = 5;
+    private static final int RANDOM_MAX = 100;
 
     public FigureSupplier() {
         this.random = new Random();
