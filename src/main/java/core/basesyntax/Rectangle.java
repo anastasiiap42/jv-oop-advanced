@@ -34,7 +34,7 @@ public class Rectangle extends Figure {
 
     @Override
     public void draw() {
-        System.out.println("rectangle, area: " + this.obtainArea() + " sq. units, base: " + this.base + ", height: "
-                + this.height + " , color: " + this.getColor());
+        System.out.println("rectangle, area: " + this.obtainArea() + " sq. units, base: "
+                + this.base + ", height: " + this.height + " , color: " + this.getColor());
     }
 }

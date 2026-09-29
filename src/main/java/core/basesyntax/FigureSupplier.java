@@ -1,6 +1,5 @@
 package core.basesyntax;
 
-import java.awt.*;
 import java.util.Random;
 
 public class FigureSupplier {
@@ -8,7 +7,7 @@ public class FigureSupplier {
     private final ColorSupplier colorSupplier;
     private Figure[] figures;
     private final Random random;
-    private final static int RANDOM_MAX = 100;
+    private static final int RANDOM_MAX = 100;
 
     public FigureSupplier() {
         this.random = new Random();
