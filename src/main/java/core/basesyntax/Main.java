@@ -1,0 +1,17 @@
+package core.basesyntax;
+
+/**
+ * Feel free to remove this class and create your own.
+ */
+public class Main {
+    public static void main(String[] args) {
+        FigureSupplier supplier = new FigureSupplier();
+        Figure[] figures = new Figure[] { supplier.getRandomFigure(), supplier.getRandomFigure(),
+                supplier.getDefaultFigure(), supplier.getDefaultFigure() };
+
+        for (Figure figure : figures) {
+            System.out.print("Figure: ");
+            figure.draw();
+        }
+    }
+}
